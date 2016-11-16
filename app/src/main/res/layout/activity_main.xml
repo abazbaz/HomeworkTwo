@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.adrian.homeworkonetwo.MainActivity"
+    android:clickable="true"
+    android:background="#ffffff"
+    android:textAlignment="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Me In"
+        android:id="@+id/button"
+        android:textSize="23dp"
+        android:padding="15dp"
+        android:paddingLeft="0dp"
+        android:paddingEnd="70dp"
+        android:paddingStart="70dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:width="255dp"
+        android:onClick="button"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/PasswInput"
+        android:layout_alignStart="@+id/PasswInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserNameInput"
+        android:textSize="22dp"
+        android:background="#ddf1d7"
+        android:padding="15dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="45dp"
+        android:paddingStart="45dp"
+        android:width="255dp"
+        android:paddingLeft="0dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/PasswInp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:ems="10"
+        android:id="@+id/PasswInput"
+        android:width="255dp"
+        android:textAlignment="center"
+        android:background="#ddf1d7"
+        android:padding="15dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/UserNameInput"
+        android:layout_alignStart="@+id/UserNameInput"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:id="@+id/PasswInp"
+        android:textSize="22dp"
+        android:layout_marginBottom="23dp"
+        android:layout_above="@+id/PasswInput"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"
+        android:id="@+id/PasswordText"
+        android:textSize="22dp"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/UserNameInput"
+        android:layout_alignRight="@+id/PasswInp"
+        android:layout_alignEnd="@+id/PasswInp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/radioButtonSettings"
+        android:layout_marginTop="48dp"
+        android:checked="false"
+        android:button="Settings"
+        android:background="#e5e5e5"
+        android:padding="5dp"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/UserNameInput"
+        android:layout_alignStart="@+id/UserNameInput"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:id="@+id/radioButtonProfile"
+        android:checked="false"
+        android:button="Profile"
+        android:background="#ebeaea"
+        android:padding="5dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:layout_alignTop="@+id/radioButtonSettings"
+        android:layout_alignRight="@+id/UserNameInput"
+        android:layout_alignEnd="@+id/UserNameInput"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+</RelativeLayout>
